@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="font-helvetica "> 
+  <!--Messages Button-->
+  <button class="w-[251px] h-[56px] bg-white z-[100] fixed right-[32px] bottom-[32px] rounded-full flex items-center px-4 hover:bg-gray-200/50
+  shadow-[0_0_10px_rgba(0,0,0,0.1)] border-[1px]
+  ">
+      <div class="flex-1 flex justify-start items-center">
+        <i data-lucide="send" class="mr-2"></i>
+        <span class="font-semibold text-[14px]">
+          Messages
+        </span>
+      </div>
+      <div class="flex flex-1 justify-end -space-x-2 shrink-0">
+        <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="cat" class="size-[28px] rounded-full object-cover border-2 border-white z-20">
+        <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="hm-cat" class="size-[28px] rounded-full object-cover border-2 border-white z-10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRku6O_DD687R0eMFJ9l-D1F8ccbesZdiBYpA&s" alt="hm-cat" class="size-[28px] rounded-full object-cover border-2 border-white">
+      </div>    
+  </button>
+
+   <!--Navigation-->
+  <nav class="group bg-white h-screen w-[72px] hover:w-[240px] fixed px-[12px] pt-[8px] pb-[20px] flex flex-col transition-all duration-300 ease-in-out z-10">
+    <div class="size-[48px] hover:bg-gray-400/30 rounded cursor-pointer p-[12px] my-[4px] group/btn">
+      <button class="relative">
+        <i data-lucide="instagram"></i>
+
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-5 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Instagram
+        </span>
+      </button>
+    </div>
+
+    <div class="flex-1 flex flex-col justify-center [&>button]:rounded [&>button]:cursor-pointer [&>button]:p-[12px] [&>button]:my-[4px]">
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="home" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+      
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Home
+        </span>
+
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Home
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="play" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+      
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Reels
+        </span>
+
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Reels
+        </span>
+
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="send" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Messages
+        </span>
+
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Messages
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="search" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Search
+        </span>
+
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Search
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="compass" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Explore 
+        </span>
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Explore
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="heart" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Notifications
+        </span>
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Notifications
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="plus" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+        
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Create
+        </span>
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          New post
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8fS45hkQDAriG9o-yfGI_nPu-JGwm4PbvQ&s" alt="cat"
+        class="size-[24px] rounded-full object-cover object-[50%_100%] border-none transition-transform min-w-[24px] min-h-[24px]"
+        >
+        
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Profile
+        </span>
+      </button>
+    </div>
+    
+    <div class="flex flex-col h-[112px] [&>button]:rounded [&>button]:cursor-pointer [&>button]:p-[12px] [&>button]:my-[4px] [&>button]:transition-colors">
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="menu" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+        
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Menu
+        </span>
+        
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Settings
+        </span>
+      </button>
+      <button class="hover:bg-gray-400/30 group/btn flex items-center gap-4 relative">
+        <i data-lucide="blocks" class="transition-transform min-w-[24px] min-h-[24px]"></i>
+        
+        <span class="font-medium whitespace-nowrap opacity-0 group-hover/btn:font-bold group-hover:opacity-100 transition-opacity 
+        duration-200 delay-75 overflow-hidden">
+          Also from Meta
+        </span>
+        <span class="absolute text-[12px] bg-white border-solid border-black border-t-[2px] border-l-[2px] border-[1px] 
+        -bottom-4 left-7 z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:delay-1000
+        pointer-events-none transition-opacity duration-150 ease-in-out px-[7px] py-[3px]">
+          Also from Meta
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="flex justify-center">
+    
+    <div class="bg-white w-[630px] flex flex-col items-center">
+      <!--Myday section-->
+      <header class="w-[630px] h-[124px] flex items-center justify-center cursor-pointer mb-4 mt-[15px] text-gray-500">
+        <div class="w-[630px] h-[124px] overflow-hidden py-[8px] px-[9px] relative">
+          <div class="w-[1px] h-[108px] ">
+            <ul class="flex gap-4">
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://i.pinimg.com/736x/bf/6e/29/bf6e296386c67b027cd3d234e3c6efa4.jpg" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center items-start">
+                    <span class="text-[12px]">
+                      Purr_Box
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9IUsEJnumAe1mtHR9xldEGRYtz7DsyS2Tug&s" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[12px]">
+                      ToeBeans
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://www.shutterstock.com/image-photo/surprised-cat-meme-face-600nw-2503158851.jpg" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[12px]">
+                      BadKitty
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://i.redd.it/8pgz4s1rba3d1.jpeg" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[12px]">
+                      Zoomies
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://cdn-useast1.kapwing.com/static/templates/scared-cat-meme-template-full-400dbb6d.webp" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[12px]">
+                      MeowMix
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://i.ytimg.com/vi/j1YEVm5M-YM/maxresdefault.jpg" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[12px]">
+                      PurrPal
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8fS45hkQDAriG9o-yfGI_nPu-JGwm4PbvQ&s" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[12px]">
+                      fywy
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="w-[90px] h-[108px]">
+                <div class="w-[90px] h-[102px] flex flex-col">
+                  <div class="w-[90px] h-[86px] relative">
+                    <canvas class="absolute inset-0 h-full w-full rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600" width="74" height="74"></canvas>
+                    <span class="absolute inset-[3px] block overflow-hidden rounded-full border-[3px] border-white">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8fS45hkQDAriG9o-yfGI_nPu-JGwm4PbvQ&s" alt="Profile" class="w-full h-full object-cover object-[50%_100%]">
+                    </span>
+                  </div>
+                  <div class="w-[90px] h-[16px] flex justify-center">
+                    <span class="text-[14px]">
+                      fywy
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="w-[45px] h-[57px] pb-[12px] z-10 absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center">
+            <i data-lucide="chevron-right" class="w-[25px] h-[25px] bg-white/80 rounded-full hover:bg-white "></i>
+          </button>
+        </div>
+
+      </header>
+      
+      <!--Main post-->
+      <!--main-->
+      <div class="w-[470px] flex flex-col pb-[16px] mb-[20px]">
+
+        <!--Post section-->
+        <section class="w-[470px] h-[44px] flex items-start justify-center">
+          
+          <div class="w-[446px] h-[32px] flex items-center">
+            <div class="w-[32px] h-[32px] mr-[12px] relative group">
+              <a href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8fS45hkQDAriG9o-yfGI_nPu-JGwm4PbvQ&s" alt="cat"
+              class="w-[32px] h-[32px] rounded-full object-cover object-[50%_100%] border-none"
+              >
+              </a>
+
+              <!--Tooltip -->
+              <div class="w-[380px] h-[330px] rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.1)] bg-white absolute opacity-0 group-hover:opacity-100 
+              duration-200 group-hover:pointer-events-auto pointer-events-none transition-opacity ease-in-out flex flex-col z-10 overflow-hidden delay-200
+              ">
+                <div class="flex pt-[15px] px-[15px]">
+                  <div class="size-[60px] rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] bg-yellow-300">
+                    <div class="h-full w-full rounded-full bg-white p-[3px] cursor-pointer">
+                      <a href="#">
+                        <img src="https://i.pinimg.com/736x/bf/6e/29/bf6e296386c67b027cd3d234e3c6efa4.jpg" alt="Profile"
+                        class="w-full h-full rounded-full object-cover">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 ml-3">
+                    <a href="#" class="font-bold text-[16px] flex cursor-pointer leading-tight">
+                      <span>
+                        fywy
+                      </span>
+                    </a>
+                    <div class="text-gray-500 text-[14px] flex">
+                      <span>
+                        ako to
+                      </span>
+                    </div>
+                    <div class="flex items-center">
+                      <a href="#" class="text-black text-[13px] bg-gray-400/15 py-[2px] px-[8px] rounded-full cursor-pointer hover:bg-gray-400/60">
+                        @fywy
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" flex px-[15px] my-[10px]">
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">18</span>
+                    <span class="text-gray-500">post</span>
+                  </div>
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">270</span>
+                    <span class="text-gray-500">followers</span>
+                  </div>
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">18</span>
+                    <span class="text-gray-500">following</span>
+                  </div>
+
+                </div>
+                <div class="flex-1 grid grid-cols-3 gap-2">
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://images.ctfassets.net/ub3bwfd53mwy/5WFv6lEUb1e6kWeP06CLXr/acd328417f24786af98b1750d90813de/4_Image.jpg?w=750" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx--iY1FQauxz60OyDNy8S-K8mmbzlAp4gfQ&s" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRe-eFmNtsjB26EojTgzAsHLTEzq5yX3Iew&s" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                </div>
+                <div class="flex-1 grid grid-cols-2 gap-4 px-[15px] items-center">
+                  <button class="h-9 flex text-[14px] font-bold text-white items-center bg-blue-500 hover:bg-[#4b5ffa] px-4 rounded-[10px] justify-center">
+                    <i data-lucide="send" class="mr-2.5"></i>
+                    <span>Message</span>
+                  </button>
+
+                  <button class="h-9 text-black flex text-[14px] font-bold items-center bg-gray-500/10 hover:bg-gray-500/30 px-4 rounded-[10px] justify-center">
+                    <span>Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 text-[14px] flex items-center">
+              <div class="relative group">
+                <a href="#" class="text-black font-semibold">fywy</a>
+                <div class="w-[380px] h-[330px] rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.1)] bg-white absolute opacity-0 group-hover:opacity-100 
+                duration-200 group-hover:pointer-events-auto pointer-events-none transition-opacity ease-in-out flex flex-col z-10 overflow-hidden delay-200
+                ">
+                  <div class="flex pt-[15px] px-[15px]">
+                    <div class="size-[60px] rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] bg-yellow-300">
+                      <div class="h-full w-full rounded-full bg-white p-[3px] cursor-pointer">
+                        <a href="#">
+                          <img src="https://i.pinimg.com/736x/bf/6e/29/bf6e296386c67b027cd3d234e3c6efa4.jpg" alt="Profile"
+                          class="w-full h-full rounded-full object-cover">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="flex flex-col flex-1 ml-3">
+                      <a href="#" class="font-bold text-[16px] flex cursor-pointer leading-tight">
+                        <span>
+                          fywy
+                        </span>
+                      </a>
+                      <div class="text-gray-500 text-[14px] flex">
+                        <span>
+                          ako to
+                        </span>
+                      </div>
+                      <div class="flex items-center">
+                        <a href="#" class="text-black text-[13px] bg-gray-400/15 py-[2px] px-[8px] rounded-full cursor-pointer hover:bg-gray-400/60">
+                          @fywy
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" flex px-[15px] my-[10px]">
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">18</span>
+                      <span class="text-gray-500">post</span>
+                    </div>
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">270</span>
+                      <span class="text-gray-500">followers</span>
+                    </div>
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">18</span>
+                      <span class="text-gray-500">following</span>
+                    </div>
+
+                  </div>
+                  <div class="flex-1 grid grid-cols-3 gap-2">
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://images.ctfassets.net/ub3bwfd53mwy/5WFv6lEUb1e6kWeP06CLXr/acd328417f24786af98b1750d90813de/4_Image.jpg?w=750" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx--iY1FQauxz60OyDNy8S-K8mmbzlAp4gfQ&s" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRe-eFmNtsjB26EojTgzAsHLTEzq5yX3Iew&s" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                  </div>
+                  <div class="flex-1 grid grid-cols-2 gap-4 px-[15px] items-center">
+                    <button class="h-9 flex text-[14px] font-bold text-white items-center bg-blue-500 hover:bg-[#4b5ffa] px-4 rounded-[10px] justify-center">
+                      <i data-lucide="send" class="mr-2.5"></i>
+                      <span>Message</span>
+                    </button>
+
+                    <button class="h-9 text-black flex text-[14px] font-bold items-center bg-gray-500/10 hover:bg-gray-500/30 px-4 rounded-[10px] justify-center">
+                      <span>Following</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <span class="text-gray-500 mx-[5px]">•</span>
+              <span class="text-gray-500 font-light">18h</span>
+            </div>
+            <div>
+              <a class="text-blue-500 text-[14px] hover:underline" href="#">Follow</a>
+            </div>
+            <div class="w-[32px] h-[24px] flex justify-end items-center">
+              <button class="text-gray-950  transition-transform  hover:scale-110 ease-in-out">
+                <i data-lucide="more-horizontal"></i>
+              </button>
+            </div>
+          </div> 
+        </section>
+
+        <section class="bg-black flex-1 flex justify-center items-center rounded-[5px]">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg" alt="cat"
+          class="object-cover object-center rounded-[5px] flex-1">
+        </section>
+
+        <section class="w-[470px] flex justify-center">
+          
+          <div class="flex flex-col my-[3px]">
+            <div class="w-[446px] h-[40px] flex my-[4px]">
+              <div class="flex-1 flex items-center group">
+                <div class="h-[40px] w-[33px] flex items-center justify-start ml-[3px] group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="heart"></i>
+                  </button>
+                </div>
+                <div class="text-[14px] font-semibold mr-[4px]">
+                  2k
+                </div>
+                <div class="size-[40px] flex items-center justify-center group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="message-circle"></i>
+                  </button>
+                </div>
+                <div class="text-[14px] font-semibold mr-[4px]">
+                  2k
+                </div>
+                <div class="size-[40px] flex items-center justify-center group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="send"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="flex flex-1 justify-end">
+                <div class="flex items-center justify-end group">
+                  <button class="flex items-center justify-end group-hover:scale-110">
+                    <i data-lucide="bookmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-[446px] w-full self-start">
+              <p class="font-bold text-[14px] self-start ml-[7px]">fywy
+                <span class="font-normal text-[14px]">
+                  The Xhuttle is a Mid-tower ATX case with a unique left-hand (inverted) layout, rather than an ITX/SFF case. It’s one of ...
+                  <button class="font-bold text-gray-500">
+                    more
+                  </button>
+                </span>
+              </p>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!--main2-->
+      <div class="w-[470px] flex flex-col pb-[16px] mb-[20px]">
+
+        <!--Post section-->
+        <section class="w-[470px] h-[44px] flex items-start justify-center">
+          
+          <div class="w-[446px] h-[32px] flex items-center">
+            <div class="w-[32px] h-[32px] mr-[12px] relative group">
+              <a href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKOOpLy92UjzQxq8NCxgxOQJbj_YVdfHO_g&s" alt="cat"
+              class="w-[32px] h-[32px] rounded-full object-cover object-[50%_100%] border-none"
+              >
+              </a>
+
+              <!--Tooltip -->
+              <div class="w-[380px] h-[330px] rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.1)] bg-white absolute opacity-0 group-hover:opacity-100 
+              duration-200 group-hover:pointer-events-auto pointer-events-none transition-opacity ease-in-out flex flex-col z-10 overflow-hidden delay-200
+              ">
+                <div class="flex pt-[15px] px-[15px]">
+                  <div class="size-[60px] rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] bg-yellow-300">
+                    <div class="h-full w-full rounded-full bg-white p-[3px] cursor-pointer">
+                      <a href="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKOOpLy92UjzQxq8NCxgxOQJbj_YVdfHO_g&s" alt="Profile"
+                        class="w-full h-full rounded-full object-cover">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 ml-3">
+                    <a href="#" class="font-bold text-[16px] flex cursor-pointer leading-tight">
+                      <span>
+                        Natoy_Loves
+                      </span>
+                    </a>
+                    <div class="text-gray-500 text-[14px] flex">
+                      <span>
+                        ako to si Natoy
+                      </span>
+                    </div>
+                    <div class="flex items-center">
+                      <a href="#" class="text-black text-[13px] bg-gray-400/15 py-[2px] px-[8px] rounded-full cursor-pointer hover:bg-gray-400/60">
+                        @Natoym@pagmah4l
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" flex px-[15px] my-[10px]">
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">18</span>
+                    <span class="text-gray-500">post</span>
+                  </div>
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">270</span>
+                    <span class="text-gray-500">followers</span>
+                  </div>
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">18</span>
+                    <span class="text-gray-500">following</span>
+                  </div>
+
+                </div>
+                <div class="flex-1 grid grid-cols-3 gap-2">
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/098/203/small/silver-tabby-cat-sitting-on-green-background-free-photo.jpg" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0bddoDvS6X_tMFM4oe7phBRBrSJYUtvOJw&s" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://img.freepik.com/free-photo/little-cat-sitting-grass_1150-17019.jpg?semt=ais_hybrid&w=740&q=80" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                </div>
+                <div class="flex-1 grid grid-cols-2 gap-4 px-[15px] items-center">
+                  <button class="h-9 flex text-[14px] font-bold text-white items-center bg-blue-500 hover:bg-[#4b5ffa] px-4 rounded-[10px] justify-center">
+                    <i data-lucide="send" class="mr-2.5"></i>
+                    <span>Message</span>
+                  </button>
+
+                  <button class="h-9 text-black flex text-[14px] font-bold items-center bg-gray-500/10 hover:bg-gray-500/30 px-4 rounded-[10px] justify-center">
+                    <span>Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 text-[14px] flex items-center">
+              <div class="relative group">
+                <a href="#" class="text-black font-semibold">Natoy_Loves</a>
+                <div class="w-[380px] h-[330px] rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.1)] bg-white absolute opacity-0 group-hover:opacity-100 
+                duration-200 group-hover:pointer-events-auto pointer-events-none transition-opacity ease-in-out flex flex-col z-10 overflow-hidden delay-200
+                ">
+                  <div class="flex pt-[15px] px-[15px]">
+                    <div class="size-[60px] rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] bg-yellow-300">
+                      <div class="h-full w-full rounded-full bg-white p-[3px] cursor-pointer">
+                        <a href="#">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKOOpLy92UjzQxq8NCxgxOQJbj_YVdfHO_g&s" alt="Profile"
+                          class="w-full h-full rounded-full object-cover">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="flex flex-col flex-1 ml-3">
+                      <a href="#" class="font-bold text-[16px] flex cursor-pointer leading-tight">
+                        <span>
+                          Natoy_Loves
+                        </span>
+                      </a>
+                      <div class="text-gray-500 text-[14px] flex">
+                        <span>
+                          ako to si Natoy
+                        </span>
+                      </div>
+                      <div class="flex items-center">
+                        <a href="#" class="text-black text-[13px] bg-gray-400/15 py-[2px] px-[8px] rounded-full cursor-pointer hover:bg-gray-400/60">
+                          @Natoym@pagmah4l
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" flex px-[15px] my-[10px]">
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">18</span>
+                      <span class="text-gray-500">post</span>
+                    </div>
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">270</span>
+                      <span class="text-gray-500">followers</span>
+                    </div>
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">18</span>
+                      <span class="text-gray-500">following</span>
+                    </div>
+
+                  </div>
+                  <div class="flex-1 grid grid-cols-3 gap-2">
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://static.vecteezy.com/system/resources/thumbnails/002/098/203/small/silver-tabby-cat-sitting-on-green-background-free-photo.jpg" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl0bddoDvS6X_tMFM4oe7phBRBrSJYUtvOJw&s" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://img.freepik.com/free-photo/little-cat-sitting-grass_1150-17019.jpg?semt=ais_hybrid&w=740&q=80" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                  </div>
+                  <div class="flex-1 grid grid-cols-2 gap-4 px-[15px] items-center">
+                    <button class="h-9 flex text-[14px] font-bold text-white items-center bg-blue-500 hover:bg-[#4b5ffa] px-4 rounded-[10px] justify-center">
+                      <i data-lucide="send" class="mr-2.5"></i>
+                      <span>Message</span>
+                    </button>
+
+                    <button class="h-9 text-black flex text-[14px] font-bold items-center bg-gray-500/10 hover:bg-gray-500/30 px-4 rounded-[10px] justify-center">
+                      <span>Following</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <span class="text-gray-500 mx-[5px]">•</span>
+              <span class="text-gray-500 font-light">18h</span>
+            </div>
+            <div>
+              <a class="text-blue-500 text-[14px] hover:underline" href="#">Follow</a>
+            </div>
+            <div class="w-[32px] h-[24px] flex justify-end items-center">
+              <button class="text-gray-950  transition-transform  hover:scale-110 ease-in-out">
+                <i data-lucide="more-horizontal"></i>
+              </button>
+            </div>
+          </div> 
+        </section>
+
+        <section class="bg-black flex-1 flex justify-center items-center rounded-[5px]">
+          <img src="https://www.aaha.org/wp-content/uploads/2024/09/kitten-lying-in-blanket.jpg" alt="cat"
+          class="object-cover object-center rounded-[5px] flex-1">
+        </section>
+
+        <section class="w-[470px] flex justify-center">
+          
+          <div class="flex flex-col my-[3px]">
+            <div class="w-[446px] h-[40px] flex my-[4px]">
+              <div class="flex-1 flex items-center group">
+                <div class="h-[40px] w-[33px] flex items-center justify-start ml-[3px] group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="heart"></i>
+                  </button>
+                </div>
+                <div class="text-[14px] font-semibold mr-[4px]">
+                  2k
+                </div>
+                <div class="size-[40px] flex items-center justify-center group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="message-circle"></i>
+                  </button>
+                </div>
+                <div class="text-[14px] font-semibold mr-[4px]">
+                  2k
+                </div>
+                <div class="size-[40px] flex items-center justify-center group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="send"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="flex flex-1 justify-end">
+                <div class="flex items-center justify-end group">
+                  <button class="flex items-center justify-end group-hover:scale-110">
+                    <i data-lucide="bookmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-[446px] w-full self-start">
+              <p class="font-bold text-[14px] self-start ml-[7px]">fywy
+                <span class="font-normal text-[14px]">
+                  The Xhuttle is a Mid-tower ATX case with a unique left-hand (inverted) layout, rather than an ITX/SFF case. It’s one of ...
+                  <button class="font-bold text-gray-500">
+                    more
+                  </button>
+                </span>
+              </p>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!--main3-->
+      <div class="w-[470px] flex flex-col pb-[16px] mb-[20px]">
+
+        <!--Post section-->
+        <section class="w-[470px] h-[44px] flex items-start justify-center">
+          
+          <div class="w-[446px] h-[32px] flex items-center">
+            <div class="w-[32px] h-[32px] mr-[12px] relative group">
+              <a href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKYe00NaD5SQjIMvXYPssq0r1dXJggL3ZIg&s" alt="cat"
+              class="w-[32px] h-[32px] rounded-full object-cover object-[50%_100%] border-none"
+              >
+              </a>
+
+              <!--Tooltip -->
+              <div class="w-[380px] h-[330px] rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.1)] bg-white absolute opacity-0 group-hover:opacity-100 
+              duration-200 group-hover:pointer-events-auto pointer-events-none transition-opacity ease-in-out flex flex-col z-10 overflow-hidden delay-200
+              ">
+                <div class="flex pt-[15px] px-[15px]">
+                  <div class="size-[60px] rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] bg-yellow-300">
+                    <div class="h-full w-full rounded-full bg-white p-[3px] cursor-pointer">
+                      <a href="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKYe00NaD5SQjIMvXYPssq0r1dXJggL3ZIg&s" alt="Profile"
+                        class="w-full h-full rounded-full object-cover">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex flex-col flex-1 ml-3">
+                    <a href="#" class="font-bold text-[16px] flex cursor-pointer leading-tight">
+                      <span>
+                        Bogart
+                      </span>
+                    </a>
+                    <div class="text-gray-500 text-[14px] flex">
+                      <span>
+                        bogart lang sakalam
+                      </span>
+                    </div>
+                    <div class="flex items-center">
+                      <a href="#" class="text-black text-[13px] bg-gray-400/15 py-[2px] px-[8px] rounded-full cursor-pointer hover:bg-gray-400/60">
+                        @bogartbantot
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" flex px-[15px] my-[10px]">
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">18</span>
+                    <span class="text-gray-500">post</span>
+                  </div>
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">270</span>
+                    <span class="text-gray-500">followers</span>
+                  </div>
+                  <div class="text-[16px] flex flex-col flex-1 items-center">
+                    <span class="font-bold">18</span>
+                    <span class="text-gray-500">following</span>
+                  </div>
+
+                </div>
+                <div class="flex-1 grid grid-cols-3 gap-2">
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrS0uhvzKQeWZ7lde98dMXwpdAkjsaFJw6HA&s" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065&width=1100" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                  <a href="#" class="aspect-square shrink-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0Yrx17n1drkMYpW55ZQkkXegIynoji4hJA&s" alt="photo"
+                    class="w-full h-full object-cover">
+                  </a>
+                </div>
+                <div class="flex-1 grid grid-cols-2 gap-4 px-[15px] items-center">
+                  <button class="h-9 flex text-[14px] font-bold text-white items-center bg-blue-500 hover:bg-[#4b5ffa] px-4 rounded-[10px] justify-center">
+                    <i data-lucide="send" class="mr-2.5"></i>
+                    <span>Message</span>
+                  </button>
+
+                  <button class="h-9 text-black flex text-[14px] font-bold items-center bg-gray-500/10 hover:bg-gray-500/30 px-4 rounded-[10px] justify-center">
+                    <span>Following</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 text-[14px] flex items-center">
+              <div class="relative group">
+                <a href="#" class="text-black font-semibold">Bogart</a>
+                <div class="w-[380px] h-[330px] rounded-[20px] shadow-[0_0_10px_rgba(0,0,0,0.1)] bg-white absolute opacity-0 group-hover:opacity-100 
+                duration-200 group-hover:pointer-events-auto pointer-events-none transition-opacity ease-in-out flex flex-col z-10 overflow-hidden delay-200
+                ">
+                  <div class="flex pt-[15px] px-[15px]">
+                    <div class="size-[60px] rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 p-[3px] bg-yellow-300">
+                      <div class="h-full w-full rounded-full bg-white p-[3px] cursor-pointer">
+                        <a href="#">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKYe00NaD5SQjIMvXYPssq0r1dXJggL3ZIg&s" alt="Profile"
+                          class="w-full h-full rounded-full object-cover">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="flex flex-col flex-1 ml-3">
+                      <a href="#" class="font-bold text-[16px] flex cursor-pointer leading-tight">
+                        <span>
+                          Bogart
+                        </span>
+                      </a>
+                      <div class="text-gray-500 text-[14px] flex">
+                        <span>
+                          bogart lang sakalam
+                        </span>
+                      </div>
+                      <div class="flex items-center">
+                        <a href="#" class="text-black text-[13px] bg-gray-400/15 py-[2px] px-[8px] rounded-full cursor-pointer hover:bg-gray-400/60">
+                          @bogartbantot
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" flex px-[15px] my-[10px]">
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">18</span>
+                      <span class="text-gray-500">post</span>
+                    </div>
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">270</span>
+                      <span class="text-gray-500">followers</span>
+                    </div>
+                    <div class="text-[16px] flex flex-col flex-1 items-center">
+                      <span class="font-bold">18</span>
+                      <span class="text-gray-500">following</span>
+                    </div>
+
+                  </div>
+                  <div class="flex-1 grid grid-cols-3 gap-2">
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrS0uhvzKQeWZ7lde98dMXwpdAkjsaFJw6HA&s" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://www.wondercide.com/cdn/shop/articles/Upside_down_gray_cat.png?v=1685551065&width=1100" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                    <a href="#" class="aspect-square shrink-0">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0Yrx17n1drkMYpW55ZQkkXegIynoji4hJA&s" alt="photo"
+                      class="w-full h-full object-cover">
+                    </a>
+                  </div>
+                  <div class="flex-1 grid grid-cols-2 gap-4 px-[15px] items-center">
+                    <button class="h-9 flex text-[14px] font-bold text-white items-center bg-blue-500 hover:bg-[#4b5ffa] px-4 rounded-[10px] justify-center">
+                      <i data-lucide="send" class="mr-2.5"></i>
+                      <span>Message</span>
+                    </button>
+
+                    <button class="h-9 text-black flex text-[14px] font-bold items-center bg-gray-500/10 hover:bg-gray-500/30 px-4 rounded-[10px] justify-center">
+                      <span>Following</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <span class="text-gray-500 mx-[5px]">•</span>
+              <span class="text-gray-500 font-light">18h</span>
+            </div>
+            <div>
+              <a class="text-blue-500 text-[14px] hover:underline" href="#">Follow</a>
+            </div>
+            <div class="w-[32px] h-[24px] flex justify-end items-center">
+              <button class="text-gray-950  transition-transform  hover:scale-110 ease-in-out">
+                <i data-lucide="more-horizontal"></i>
+              </button>
+            </div>
+          </div> 
+        </section>
+
+        <section class="bg-black flex-1 flex justify-center items-center rounded-[5px]">
+          <img src="https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_795,w_4000,h_2250/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/mentalfloss/01jgma3mfm6m1d13a7xy.jpg" alt="cat"
+          class="object-cover object-center rounded-[5px] flex-1">
+        </section>
+
+        <section class="w-[470px] flex justify-center">
+          
+          <div class="flex flex-col my-[3px]">
+            <div class="w-[446px] h-[40px] flex my-[4px]">
+              <div class="flex-1 flex items-center group">
+                <div class="h-[40px] w-[33px] flex items-center justify-start ml-[3px] group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="heart"></i>
+                  </button>
+                </div>
+                <div class="text-[14px] font-semibold mr-[4px]">
+                  2k
+                </div>
+                <div class="size-[40px] flex items-center justify-center group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="message-circle"></i>
+                  </button>
+                </div>
+                <div class="text-[14px] font-semibold mr-[4px]">
+                  2k
+                </div>
+                <div class="size-[40px] flex items-center justify-center group/btn">
+                  <button class="group-hover/btn:scale-110 transition-all">
+                    <i data-lucide="send"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div class="flex flex-1 justify-end">
+                <div class="flex items-center justify-end group">
+                  <button class="flex items-center justify-end group-hover:scale-110">
+                    <i data-lucide="bookmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-[446px] w-full self-start">
+              <p class="font-bold text-[14px] self-start ml-[7px]">fywy
+                <span class="font-normal text-[14px]">
+                  The Xhuttle is a Mid-tower ATX case with a unique left-hand (inverted) layout, rather than an ITX/SFF case. It’s one of ...
+                  <button class="font-bold text-gray-500">
+                    more
+                  </button>
+                </span>
+              </p>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+    <div class="w-[383px] pl-[64px] mt-[36px]">
+      <!--Profile section-->
+      <div class="w-[319px] h-[44px] px-[16px]">
+        <div class="w-[287px] h-[44px] flex flex-row ">
+          <div class="w-[56px] h-[44px] flex justify-start">
+            <a href="#" class="size-[44px]">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi8fS45hkQDAriG9o-yfGI_nPu-JGwm4PbvQ&s" alt="cat" class="rounded-full object-cover size-[44px] object-[50%_100%]">
+            </a>
+          </div>
+          <div class="flex flex-1 flex-col">
+            <a href="#" class="h-[18px] flex-1 flex items-end">
+              <span class="text-[12px] font-bold">
+                fywy
+              </span>
+            </a>
+            <div class="h-[18px] flex-1 flex items-start">
+              <span class="text-[12px]">
+                The Cat
+              </span>
+            </div>
+          </div>
+          <div class="flex items-center pl-[15px]">
+            <button class="text-blue-500 font-semibold text-[12px] hover:text-blue-800 transition-colors">
+              Switch 
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--Suggestion section-->
+      <div class="w-[319px] h-[351px] mt-[24px]">
+        <div class="w-[319px] h-[19px] px-[16px] py-[4px] my-3 ">
+          <div class="w-[287px] h-[11px] flex items-center ">
+            <div class="flex-1 h-[11px] flex items-center">
+              <span class="text-[12px] font-bold">
+                Suggested for you
+              </span>
+            </div>
+            <div class="flex items-center pl-[15px] ">
+                <button class="text-[12px] text-black font-semibold hover:text-gray-400 transition-colors">
+                  See all
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <!--Add friends section-->
+        <div class="w-[319px] h-[44px] px-[16px] flex flex-col gap-3">
+
+          <div class="w-[287px] h-[44px] flex flex-row">
+
+            <div class="w-[56px] h-[44px] flex justify-start">
+              <a href="#" class="size-[44px]">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRku6O_DD687R0eMFJ9l-D1F8ccbesZdiBYpA&s" alt="cat" class="rounded-full object-cover size-[44px] object-[50%_100%]">
+              </a>
+            </div>
+
+            <div class="flex flex-1 flex-col min-w-0">
+              <a href="#" class="h-[18px] flex-1 flex items-end">
+                <span class="text-[12px] font-bold">
+                  FurReal
+                </span>
+              </a>
+
+              <div class="h-[18px] flex-1 flex items-start text-[12px] text-gray-500 gap-[5px]">
+
+                <div class="flex -space-x-1 shrink-0">
+                  <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                  <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="hm-cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                </div>
+
+                <span class="text-xs text-gray-500 truncate">
+                  Followed by bhmy777 + 2 more users from your contacts
+                </span>
+
+              </div>
+            </div>
+
+            <div class="flex items-center pl-[15px] ">
+              <button class="text-blue-500 font-semibold text-[12px] hover:text-blue-800 transition-colors">
+                Follow
+              </button>
+            </div>
+          </div>
+
+          <div class="w-[287px] h-[44px] flex flex-row">
+
+            <div class="w-[56px] h-[44px] flex justify-start">
+              <a href="#" class="size-[44px]">
+                <img src="https://preview.redd.it/post-the-best-cat-memes-you-got-in-the-comments-please-v0-kg82lbnu0ste1.png?auto=webp&s=e6f9eee86484f5de3f4e31f3c33b2d07fb982bd5" alt="cat" class="rounded-full object-cover size-[44px] object-[50%_100%]">
+              </a>
+            </div>
+
+            <div class="flex flex-1 flex-col min-w-0">
+              <a href="#" class="h-[18px] flex-1 flex items-end">
+                <span class="text-[12px] font-bold">
+                  MewMood
+                </span>
+              </a>
+
+              <div class="h-[18px] flex-1 flex items-start text-[12px] text-gray-500 gap-[5px]">
+
+                <div class="flex -space-x-1 shrink-0">
+                  <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                  <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="hm-cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                </div>
+
+                <span class="text-xs text-gray-500 truncate">
+                  Followed by bhmy777 + 2 more users from your contacts
+                </span>
+
+              </div>
+            </div>
+
+            <div class="flex items-center pl-[15px] ">
+              <button class="text-blue-500 font-semibold text-[12px] hover:text-blue-800 transition-colors">
+                Follow
+              </button>
+            </div>
+          </div>
+
+          <div class="w-[287px] h-[44px] flex flex-row">
+
+            <div class="w-[56px] h-[44px] flex justify-start">
+              <a href="#" class="size-[44px]">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEk80qIK8dxD0nD45mO_BqjfmufNddY6aV9Q&s" alt="cat" class="rounded-full object-cover size-[44px] object-[50%_100%]">
+              </a>
+            </div>
+
+            <div class="flex flex-1 flex-col min-w-0">
+              <a href="#" class="h-[18px] flex-1 flex items-end">
+                <span class="text-[12px] font-bold">
+                  PawLife
+                </span>
+              </a>
+
+              <div class="h-[18px] flex-1 flex items-start text-[12px] text-gray-500 gap-[5px]">
+
+                <div class="flex -space-x-1 shrink-0">
+                  <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                  <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="hm-cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                </div>
+
+                <span class="text-xs text-gray-500 truncate">
+                  Followed by bhmy777 + 2 more users from your contacts
+                </span>
+
+              </div>
+            </div>
+
+            <div class="flex items-center pl-[15px] ">
+              <button class="text-blue-500 font-semibold text-[12px] hover:text-blue-800 transition-colors">
+                Follow 
+              </button>
+            </div>
+          </div>
+
+          <div class="w-[287px] h-[44px] flex flex-row">
+
+            <div class="w-[56px] h-[44px] flex justify-start">
+              <a href="#" class="size-[44px]">
+                <img src="https://media.tenor.com/1W-HKNvj8UoAAAAM/cat.gif" alt="cat" class="rounded-full object-cover size-[44px] object-[50%_100%]">
+              </a>
+            </div>
+
+            <div class="flex flex-1 flex-col min-w-0">
+              <a href="#" class="h-[18px] flex-1 flex items-end">
+                <span class="text-[12px] font-bold">
+                  CatVibe
+                </span>
+              </a>
+
+              <div class="h-[18px] flex-1 flex items-start text-[12px] text-gray-500 gap-[5px]">
+
+                <div class="flex -space-x-1 shrink-0">
+                  <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                  <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="hm-cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                </div>
+
+                <span class="text-xs text-gray-500 truncate">
+                  Followed by bhmy777 + 2 more users from your contacts
+                </span>
+
+              </div>
+            </div>
+
+            <div class="flex items-center pl-[15px] ">
+              <button class="text-blue-500 font-semibold text-[12px] hover:text-blue-800 transition-colors">
+                Follow
+              </button>
+            </div>
+          </div>
+
+          <div class="w-[287px] h-[44px] flex flex-row">
+
+            <div class="w-[56px] h-[44px] flex justify-start">
+              <a href="#" class="size-[44px]">
+                <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="cat" class="rounded-full object-cover size-[44px] object-[50%_100%]">
+              </a>
+            </div>
+
+            <div class="flex flex-1 flex-col min-w-0">
+              <a href="#" class="h-[18px] flex-1 flex items-end">
+                <span class="text-[12px] font-bold">
+                  Lil_Claw
+                </span>
+              </a>
+
+              <div class="h-[18px] flex-1 flex items-start text-[12px] text-gray-500 gap-[5px]">
+
+                <div class="flex -space-x-1 shrink-0">
+                  <img src="https://cdn-useast1.kapwing.com/static/templates/crying-cat-meme-template-full-719a53dc.webp" alt="cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                  <img src="https://i.pinimg.com/564x/98/2d/4b/982d4b383ed2cd2a6a965f3c00e95f90.jpg" alt="hm-cat" class="size-[14px] rounded-full object-cover border-2 border-white">
+                </div>
+
+                <span class="text-xs text-gray-500 truncate">
+                  Followed by bhmy777 + 2 more users from your contacts
+                </span>
+
+              </div>
+            </div>
+
+            <div class="flex items-center pl-[15px] ">
+              <button class="text-blue-500 font-semibold text-[12px] hover:text-blue-800 transition-colors">
+                Follow 
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!--Copyrights section-->
+      <div class="w-[319px] text-gray-500 text-[12px] flex justify-center px-[16px] ">
+        
+        <div class="w-[287px] flex flex-col gap-3">
+          <nav class="mb-[10px]">
+            <ul class="flex flex-row flex-wrap gap-y-[1px] justify-start sm:justify-start"> 
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">About</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Help</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Press</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">API</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Jobs</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Privacy</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Terms</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Locations</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Language</a>
+              </li>
+              
+              <li class="after:content-['·'] after:mx-1 last:after:hidden">
+                <a href="#" class="hover:underline">Meta Verified</a>
+              </li>
+              
+            </ul>
+          </nav>
+
+          <span class="text-[12px] block text-gray-500">
+            © 2026 Instagram from Meta
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+  lucide.createIcons();
+  </script>
+</body>
+</html>
